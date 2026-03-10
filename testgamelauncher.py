@@ -13,7 +13,7 @@ BLOCK_SIZE = 50
 REACH = 150
 COLORS = {1: (139, 69, 19), 2: (34, 139, 34), 3: (255, 215, 0), 4: (0, 191, 255)}
 
-class MinecraftKnockoff:
+class TestGameLauncher:
     def __init__(self):
         pygame.init()
         self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -463,5 +463,5 @@ class MinecraftKnockoff:
             self.clock.tick(60)
 
 if __name__ == "__main__":
-    game = MinecraftKnockoff()
+    game = TestGameLauncher()
     game.run()
